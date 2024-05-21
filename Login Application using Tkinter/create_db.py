@@ -3,6 +3,7 @@ import sqlite3
 conn = sqlite3.connect('user_db.db')
 cursor = conn.cursor()
 
+
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS users (
     username TEXT PRIMARY KEY,
